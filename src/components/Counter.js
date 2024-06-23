@@ -83,7 +83,7 @@ function Counter() {
       <h3>{`Discount: ${discount}%`}</h3>
       <Input label='Product' onChangeProp={handleCounterChange}/>
 
-      <p>Total amount paid: ${price*count.toFixed(2)}</p>
+      <p>Total amount paid: ${price*count*(1-discount/100).toFixed(2)}</p>
 
     </>
   );
